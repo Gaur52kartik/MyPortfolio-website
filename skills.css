@@ -1,0 +1,78 @@
+.portfolioSkills {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding-top: 10%;
+}
+.portfolioSkillsBlock {
+  flex-wrap: wrap;
+  gap: 50px;
+  position: relative;
+}
+.portfolioSkillsCircularArea {
+  flex-direction: column;
+  gap: 10px;
+}
+.portfolioSkillsCircularMeter {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+}
+.portfolioSkillsCircularMeter::before {
+  position: absolute;
+  content: "";
+  display: block;
+  inset: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+.portfolioSkillsCircularMeter .portfolioSkillsCircularMeterPercent {
+  position: absolute;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+}
+.portfolioSkillsCircularArea ul {
+  position: absolute;
+  top: 110%;
+  font-size: 12px;
+  font-family: Poppins;
+  text-align: center;
+  list-style-type: none;
+}
+.portfolioSkillsCircularArea ul i {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.portfolioSkillsCircularArea ul .fa-html5 {
+  /* color: orange; */
+  color: transparent;
+  -webkit-background-clip:text;
+  background-image: linear-gradient(to right,red,orange);
+}
+.portfolioSkillsCircularArea ul .fa-css3-alt {
+  /* color: blue; */
+  color: transparent;
+  -webkit-background-clip:text;
+  background-image: linear-gradient(to right,blue,skyblue);
+}
+.portfolioSkillsCircularArea ul .fa-database {
+  color: black;
+}
+.portfolioSkillsCircularArea ul .fa-square-js {
+  color: rgb(229, 229, 14);
+  /* border: 2px solid black; */
+  /* color: transparent;
+  -webkit-background-clip:text;
+  background-image: linear-gradient(to right,); */
+}
+.portfolioSkillsCircularArea ul .fa-java{
+  color: transparent;
+  -webkit-background-clip:text;
+  background-image: linear-gradient(to bottom,red,red,rgb(153, 150, 150),rgb(0, 183, 255),rgb(0, 183, 255),rgb(0, 183, 255),blue);
+}

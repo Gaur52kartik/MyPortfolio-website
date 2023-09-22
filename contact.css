@@ -1,0 +1,78 @@
+.portfolioContactSection {
+  height: 100vh;
+  width: 100%;
+  font-family: Poppins;
+}
+.portfolioContactSection article {
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+  gap: 30px;
+  width: 60%;
+  padding: 30px;
+  flex-direction: column;
+}
+.portfolioReachOutOrStalkAndMessageMe {
+  flex-direction: column;
+  color: rgb(83, 83, 83);
+  font-weight: bold;
+}
+.portfolioReachOutOrStalkAndMessageMe h1 {
+  font-size: 40px;
+}
+.portfolioSocialContactsLinks {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 10px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.portfolioSocialContactsLinksMail,
+.portfolioSocialContactsLinksMailAddress,
+.portfolioSocialContactsLinksPhoneNumber {
+  gap: 10px;
+}
+.portfolioSocialContactsLinksMail a,
+.portfolioSocialContactsLinksMailAddress a,
+.portfolioSocialContactsLinksPhoneNumber a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(89, 89, 89);
+}
+.portfolioSocialContactsLinksMail a:hover,
+.portfolioSocialContactsLinksMailAddress a:hover,
+.portfolioSocialContactsLinksPhoneNumber a:hover {
+  text-decoration: underline;
+}
+.portfolioSocialContactsLinksMail i {
+  color: orange;
+}
+.portfolioSocialContactsLinksMailAddress i {
+  color: red;
+}
+.portfolioSocialContactsLinksPhoneNumber i {
+  color: green;
+}
+.portfolioSocialMediaLinksIcons {
+  gap: 20px;
+}
+.portfolioSocialMediaLinksIcons a i {
+  font-size: 20px;
+}
+.portfolioSocialMediaLinksIcons a i:hover {
+  scale: 1.5;
+  cursor: pointer;
+}
+.portfolioSocialMediaLinksIcons a .fa-twitter {
+  color: #00acee;
+}
+.portfolioSocialMediaLinksIcons a .fa-whatsapp {
+  color: green;
+}
+.portfolioSocialMediaLinksIcons a .fa-linkedin {
+  color: #0a66c2;
+}
+.portfolioContactSectionCopyRight {
+  font-size: 12px;
+  font-weight: bold;
+}

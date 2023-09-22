@@ -1,0 +1,38 @@
+z.navbar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  padding: 25px;
+  width: 100%;
+}
+.portfolioHomeNavArticle {
+  gap: 300px;
+  font-family: Poppins;
+}
+.portfolioHomeNavIcon {
+  font-size: 28px;
+  font-weight: bold;
+}
+.portfolioHomeNavList {
+  list-style-type: none;
+  gap: 30px;
+}
+.portfolioHomeNavList li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.portfolioHomeNavList li a:hover {
+  color: grey;
+  border-bottom: 2px solid rgb(177, 176, 176);
+}
+.portfolioHomeNavList li .projectNavList{
+  font-weight: bold;
+  background-image: linear-gradient(to right,skyblue,red,skyblue);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.portfolioHomeNavList li .projectNavList:hover{
+  font-weight: normal;
+}

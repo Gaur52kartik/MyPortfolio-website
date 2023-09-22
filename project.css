@@ -1,0 +1,576 @@
+.portfolioProjectSection {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.portfolioChangeProjectArticle {
+  height: 90%;
+  width: 90%;
+  position: relative;
+}
+.portfolioProjectArea {
+  height: 50%;
+  width: 60%;
+  position: absolute;
+  display: none;
+}
+.portfolioProjectAreaInfo,
+.portfolioProjectAreaLogo {
+  width: 50%;
+  height: 100%;
+}
+.portfolioProjectAreaLogo img {
+  height: 100%;
+}
+.portfolioProjectAreaEarthLogo{
+  animation: rotatingImg 100s linear infinite;
+}
+@keyframes rotatingImg {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+.portfolioProjectAreaInfo {
+  font-family: monospace;
+  flex-direction: column;
+}
+.portfolioProjectAreaInfoDetail,
+.straightLineProgressBar {
+  height: 50%;
+  width: 100%;
+}
+.portfolioProjectAreaInfoDetail {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.straightLineProgressBar {
+  flex-direction: column;
+}
+.straightLineProgressTechBar {
+  height: 33%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.techBar {
+  width: 90%;
+  font-weight: bold;
+  height: 7px;
+  border-radius: 10px;
+  background-color: rgb(228, 224, 224);
+}
+.techCoveredBar {
+  height: 100%;
+  width: 80%;
+  border-radius: 10px;
+  position: relative;
+}
+.techCoveredBar .techCoveredBarPercent{
+  position: absolute;
+  right: -15px;
+  border: 2px solid;
+  height: 30px;
+  width: 30px;
+  translate: 0 -11.5px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.portfolioProjectViewArea {
+  position: absolute;
+  /* background-image: linear-gradient(to right, rgb(135, 206, 235,0.5),rgb(255, 255, 255, 0.5)); */
+  backdrop-filter: blur(4px);
+  /* background-color: grey; */
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.openPortfolioAllProjectsArticleButton {
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-family: monospace;
+  transition: all 0.4s ease-in-out;
+}
+.openPortfolioAllProjectsArticleButton:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+  scale: 1.2;
+  transition: scale 0.4s ease-in-out;
+}
+
+.portfolioProjectArea:hover .portfolioProjectViewArea {
+  display: flex;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+
+
+.portfolioAllProjectsArticle {
+  background-image: linear-gradient(
+    to right,
+    rgb(252, 252, 252, 0.5),
+    rgb(160, 160, 160, 0.5)
+  );
+  backdrop-filter: blur(2px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.closePortfolioAllProjectsArticleButton {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  font-size: 35px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 95%;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.weatherAppSection,.githubAppSection,.qrCodeGeneratorAppSection{
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.weatherForm {
+  box-shadow: 1px 5px 10px 5px grey;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.weatherForm .weatherFormInput {
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: white;
+  width: 250px;
+}
+.weatherForm .weatherFormInputBtn {
+  border-radius: 10px;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.weatherForm .weatherFormInputBtn i {
+  font-size: 20px;
+}
+.weatherArticle2 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  /* background-image: linear-gradient(
+    to top right,
+    rgb(128, 128, 128, 0.9),
+    rgb(135, 206, 235, 0.9),
+    rgb(255, 255, 255, 0.9),
+    rgb(128, 128, 128, 0.9)
+  ); */
+  background-color: white;
+  border-radius: 10px;
+  border-top-right-radius: 20px;
+  box-shadow: 1px 5px 10px 5px grey;
+}
+.weatherArticle2 .resetWeatherDataBtn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-left: 2px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+.weatherArticle2 .resetWeatherDataBtn:active {
+  scale: 0.9;
+}
+.weatherArticle2 .weatherImages {
+  height: 150px;
+}
+.weatherArticle2 .weatherDegree,
+.weatherArticle2 .weatherPlace {
+  font-family: monospace;
+  font-size: 30px;
+}
+.weatherArticle2 .weatherType {
+  font-family: monospace;
+  font-size: 20px;
+}
+.weatherDetail {
+  gap: 15px;
+}
+.weatherDetailLeft,
+.weatherDetailRight {
+  gap: 5px;
+}
+.weatherDetailLeft .fa-droplet {
+  font-size: 25px;
+}
+.weatherDetailLeft .weatherMetaDetailLeft {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.weatherDetailLeft .weatherMetaDetailLeft .dropletSideDetails {
+  font-family: monospace;
+  font-size: 12px;
+}
+.weatherDetailRight .fa-wind {
+  font-size: 25px;
+}
+.weatherDetailRight .weatherMetaDetailRight {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.weatherDetailRight .weatherMetaDetailRight .windSideDetails {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+
+
+
+/* .githubAppSection{
+  height: 100%;
+  width: 100%;
+} */
+
+.githubAppSection {
+  /* padding: 5px; */
+  flex-direction: column;
+  width: 300px;
+  /* height: 500px; */
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  /* background-color: grey; */
+  /* border: 2px solid white; */
+}
+.githubAppDetailForm {
+  /* border: 2px solid red; */
+  /* display: flex; */
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+.githubAppDetailFormInput {
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgb(198, 239, 255);
+  height: 35px;
+  width: 85%;
+  font-size: 20px;
+}
+.githubProfileSearchButton {
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: rgb(198, 239, 255);
+  font-weight: bold;
+}
+.githubProfileSearchButton:active {
+  scale: 0.9;
+}
+.resetGithubData{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 5px;
+  /* border-radius: 50%; */
+  top: 0;
+  left: 100%;
+  margin-left: 1px;
+  background-color: black;
+  /* color: white; */
+  padding: 17px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  font-size: 17px;
+  color: white;
+  /* color: black; */
+  border: 1px solid black;
+  /* border: none; */
+}
+.resetGithubData:hover{
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+}
+.resetGithubData:active{
+  scale: 0.9;
+}
+.githubProfileImages {
+  padding: 10px;
+  /* padding-right: 10px; */
+  width: 100%;
+  /* border: 2px solid blue; */
+  display: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.githubProfileBcimage {
+  /* border: 2px solid blue; */
+  height: 150px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: -45px -95px;
+  filter: blur(1.2px);
+}
+.githubProfileFrontimage {
+  height: 135px;
+  width: 135px;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  cursor: pointer;
+  transition: 1s;
+}
+.githubProfileFrontimage:hover {
+  scale: 1.5;
+  translate: 0px 25px;
+}
+.githubUserProfileInfo {
+  display: none;
+  /* border: 2px solid blue; */
+  flex-direction: column;
+  width: 100%;
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* text-align: center; */
+  /* justify-content: center; */
+  gap: 8px;
+  padding: 10px;
+  color: white;
+  z-index: 1;
+}
+.githubUserProfileInfo .githubUserProfileInfoName,
+.githubUserProfileInfoUserid {
+  font-family: Verdana;
+}
+.githubUserProfileInfo .githubUserProfileInfoBio {
+  font-family: monospace;
+}
+.githubUserProfileConnections {
+  display: none;
+  /* border: 2px solid red; */
+  justify-content: center;
+  font-family: "Poppins";
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.githubUserFollow {
+  color: white;
+  flex-direction: column;
+}
+.githubUserViewbtns {
+  display: none;
+  gap: 20px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.githubUserViewbtns .githubUserViewProfileBtn a {
+  color: black;
+  text-decoration: none;
+}
+.githubUserViewbtns button {
+  color: black;
+  padding: 5px;
+  background-color: white;
+  border: none;
+  font-family: Verdana;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.githubUserViewbtns button:hover {
+  background-color: black;
+  color: white;
+}
+.githubUserViewbtns button a:hover {
+  background-color: black;
+  color: white;
+}
+.githubUserSkills {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: none;
+}
+.githubUserSkills .githubUserSkillsHeading {
+  /* font-family: "Poppins"; */
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.githubUserSkills .githubUserSkillsType {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.githubUserSkills .githubUserSkillsType .githubUserSkillsDummyBtn {
+  color: white;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+}
+.githubUserSkills .githubUserSkillsType .githubUserSkillsDummyBtn:hover {
+  scale: 0.9;
+}
+
+
+
+.qrCodeGeneratorAppSection{
+  /* height: 100%; */
+  /* width: 100%; */
+  flex-direction: column;
+  gap: 15px;
+}
+.qrCodeGeneratorForm{
+  gap: 10px;
+}
+.qrCodeGeneratorFormInput,.qrCodeGeneratorFormInputBtn{
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgb(190, 238, 143);
+  color: black;
+  font-weight: bold;
+}
+.qrCodeGeneratorFormInputBtn{
+  font-size: 20px;
+  padding: 7px;
+  cursor: pointer;
+}
+.qrCodeImageArea{
+  margin-top: 10px;
+  /* backdrop-filter: blur(100px); */
+  background-color: white;
+  /* background-color: black; */
+  /* border-radius: 20px; */
+  /* border: 1px solid black; */
+  display: none;
+  box-shadow: 1px 5px 10px 5px grey;
+}
+.qrCodeImage{
+  /* height: 250px; */
+  width: 250px;
+}
+.qrCodeDownloadAndResetBtn{
+  margin-top: 20px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.qrCodeDownloadBtn,.qrCodeResetBtn{
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
+.qrCodeDownloadBtn{
+  background-color: black;
+  /* border: 1px solid black; */
+  border: none;
+  text-decoration: none;
+}
+.qrCodeDownloadBtn:hover{
+  background-color: rgb(46, 42, 42);
+  /* color: black; */
+}
+.qrCodeResetBtn{
+  background-color: red;
+  border: 1px solid black;
+}
+.qrCodeResetBtn:hover{
+  background-color: rgb(241, 72, 72);
+  /* color: black; */
+}
+.qrCodeDownloadBtn:active,.qrCodeResetBtn:active{
+  scale: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+.portfolioRightLeftProjectBtn {
+  background-color: black;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.portfolioRightLeftProjectBtn:hover {
+  background-color: rgb(247, 71, 71);
+  cursor: pointer;
+}
+.previousPortfolioProject {
+  left: 0;
+}
+.nextPortfolioProject {
+  right: 0;
+}

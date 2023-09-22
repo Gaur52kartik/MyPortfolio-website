@@ -1,0 +1,148 @@
+.portfolioHomeSection {
+  flex-direction: column;
+}
+.portfolioHomeImageAndBioArticle {
+  height: 100vh;
+  gap: 170px;
+}
+.portfolioHomeBioArea {
+  font-family: Poppins;
+  flex-direction: column;
+  gap: 15px;
+}
+.portfolioHomeBioAreaNameAndPost {
+  flex-direction: column;
+}
+.portfolioHomeBioAreaNameAndPost .p1,
+.portfolioHomeBioAreaNameAndPost .p2,
+.portfolioHomeBioAreaNameAndPost .p3 {
+  font-weight: bold;
+}
+.portfolioHomeBioAreaNameAndPost .p1 {
+  color: rgb(91, 90, 90);
+}
+.portfolioHomeBioAreaNameAndPost .p2 {
+  height: 40px;
+  font-size: 35px;
+}
+.portfolioHomeBioAreaNameAndPost .p3 {
+  font-size: 20px;
+  color: rgb(91, 90, 90);
+  letter-spacing: 1px;
+  min-width: 280px;
+  font-weight: 600;
+}
+
+.portfolioHomeBioAreaNameAndPost .p3 span {
+  position: relative;
+}
+.portfolioHomeBioAreaNameAndPost .p3 span::before {
+  content: "Frontend-development";
+  animation: words 30s infinite;
+}
+.portfolioHomeBioAreaNameAndPost .p3 span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: white;
+  right: -8px;
+  animation: typing 10s steps(24) infinite;
+}
+@keyframes words {
+  0%,
+  33% {
+    content: "Frontend-development";
+    color: rgb(247, 176, 45);
+    border-right: 2px solid rgb(247, 176, 45);
+  }
+  34%,
+  67% {
+    content: "Backend-development";
+    color: rgb(26, 164, 219);
+    border-right: 2px solid rgb(26, 164, 219);
+  }
+  68%,
+  100% {
+    content: "Database-development";
+    color: rgb(240, 121, 143);
+    border-right: 2px solid rgb(240, 121, 143);
+  }
+}
+@keyframes typing {
+  50% {
+    width: 0;
+  }
+  100% {
+    width: calc(100% + 8px);
+  }
+}
+
+.portfolioHomeDownloadAndContactBtn,
+.portfolioHomeGithubAndLinkedinBtn {
+  gap: 20px;
+}
+.portfolioHomeDownloadAndContactBtn a,
+.portfolioHomeGithubAndLinkedinBtn a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.portfolioHomeDownloadBtn,
+.portfolioHomeContactBtn {
+  color: black;
+  border: 1.5px solid black;
+}
+.portfolioHomeDownloadBtn {
+  font-size: 11px;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+.portfolioHomeDownloadBtn:hover {
+  color: white;
+  background-color: black;
+}
+.portfolioHomeContactBtn {
+  font-size: 11px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+}
+.portfolioHomeContactBtn:hover {
+  color: black;
+  background-color: white;
+}
+.portfolioHomeGithubAndLinkedinBtn a {
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+}
+.portfolioHomeGithubAndLinkedinBtn a i:hover {
+  scale: 1.2;
+}
+.portfolioHomeGithubAndLinkedinBtn a .fa-linkedin {
+  color: #0a66c2;
+}
+.portfolioHomeImage {
+  padding: 2rem;
+  width: 350px;
+  height: 350px;
+  /* border: 1px solid black; */
+  /* border-radius: 50%; */
+  /* background-image: linear-gradient(
+      red,green
+    ); */
+    background-image: url(./myHomeCartoonPic.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size:350px;
+    border-radius: 250px;
+  }
+.portfolioHomeImage:hover {
+  background-image: url(./myHomeCartoonPic.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+    background-size: 400px;
+}

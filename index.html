@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KARTIK</title>
+   
+   <link rel="icon" type="image/x-icon" href=" favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./education.css" />
+    <link rel="stylesheet" href="./skills.css" />
+    <link rel="stylesheet" href="./project.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .dja {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .b1 {
+        border: 2px solid red;
+      }
+      .b2 {
+        border: 2px solid blue;
+      }
+      .b3 {
+        border: 2px solid green;
+      }
+      .padding {
+        padding: 10px;
+      }
+      .portfolioBody {
+        width: 100%;
+        flex-direction: column;
+      }
+      .homeIcon {
+        flex-direction: column;
+        position: fixed;
+        bottom: 30px;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+      }
+      .homeIcon:hover {
+        scale: 1.1;
+      }
+      .homeIconLine {
+        width: 50px;
+        border: 1.5px solid black;
+      }
+    </style>
+  </head>
+  <body id="home" class="dja portfolioBody">
+    <a class="dja homeIcon" href="#home">
+      <i class="dja fa-solid fa-house"></i>
+      <div class="homeIconLine"></div>
+    </a>
+    <section class="dja navbar">
+      <article class="dja portfolioHomeNavArticle">
+        <div class="portfolioHomeNavIcon">Kartik Gaur</div>
+        <div class="portfolioHomeNavBar">
+          <ul class="dja portfolioHomeNavList">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects" class="projectNavList">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <!-- ====================================================================================== -->
+    <section id="Home" class="dja portfolioHomeSection">
+      <article class="dja portfolioHomeImageAndBioArticle">
+        <div class="dja portfolioHomeBioArea">
+          <div class="dja portfolioHomeBioAreaNameAndPost">
+            <p class="dja p1">Hello, I'm</p>
+            <p class="dja p2">Kartik</p>
+            <p class="dja p3">I am into&nbsp;<span></span></p>
+          </div>
+
+          <div class="dja portfolioHomeDownloadAndContactBtn">
+            <a class="dja portfolioHomeDownloadBtn" href="./Gaurkartik.cv.pdf" download
+              >Download CV</a
+            >
+            <a class="dja portfolioHomeContactBtn" href="#Contact"
+              >Contact Info</a
+            >
+          </div>
+          <div class="dja portfolioHomeGithubAndLinkedinBtn">
+            <a href="https://www.linkedin.com/in/kartik-gaur-0b421422a" target="_blank"><i class="dja fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Gaur52kartik" target="_blank"><i class="dja fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="dja portfolioHomeImage"></div>
+      </article>
+    </section>
+    <!-- ====================================================================================== -->
+    <section id="About" class="dja portfolioAboutSection">
+      <article class="dja portfolioAboutHeading2">
+        <div
+          class="dja portfolioHomeBioAreaNameAndPost portfolioAboutHeading2New"
+        >
+          <p class="dja p2 aboutName" style="font-size: 20px">
+            Kartik Gaur
+          </p>
+          <p class="p3" style="font-size: 16px"><span></span></p>
+        </div>
+        <ul class="porfolioAboutLorem">
+          <li>
+            I'm a 25 year old fresher frontend web developer keen on advancing
+            my knowledge and desgin.
+          </li>
+          <li>
+            I have completed MCA from Maharshi Dayanand
+            University, Rohtak, Haryana after my BCA from
+            Maharshi Dayanand
+             University, Gurugram, Haryana.
+          </li>
+          <li>
+            Frontend web development for me is a passionate, participation and
+            commitment to introduce creative solutions to complex problems.
+          </li>
+          <li>
+            I believe that we as frontend developers have the unique ability to
+            solve many of the biggest problems.
+          </li>
+        </ul>
+        <div class="porfolioAboutLoremLine"></div>
+        <div class="dja portfolioAboutContact">
+          <div class="dja portfolioAboutContactMail">
+            <span>Email :</span
+            ><a target="_blank" href="mailto:itskartik52@gmail.com"
+              >itskartik52@gmail.com</a
+            >
+          </div>
+          <div class="dja portfolioAboutContactMail">
+            <span>Place : </span>
+            <address>
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/place/Faridabad,+Haryana/@28.4020423,77.1542585,11z/data=!3m1!4b1!4m6!3m5!1s0x390cdc15f5a424b1:0xe4f50576c850e0f2!8m2!3d28.4089123!4d77.3177894!16zL20vMDRmMTB0?entry=ttu"
+                >Faridabad - 121004, Haryana</a
+              >
+            </address>
+          </div>
+        </div>
+      </article>
+      <article class="dja portfolioAboutHeading1">
+        <div class="portfolioAboutHeadingImage"></div>  
+        <!-- <div class="portfolioAboutHeadingImageLine"></div> -->
+        <a
+          href="./Gaurkartik.cv.pdf"
+          download
+          class="dja portfolioHomeDownloadBtn portfolioAboutHeading1DownloadBtn"
+        >
+          Download CV
+        </a>
+      </article>
+    </section>
+    <!-- ====================================================================================== -->
+    <section id="Education" class="dja portfolioEducation">
+      <article>
+        <div class="dja portfolioEducationHeader">
+          <div class="dja portfolioEducationHeading">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p>My <span>Education</span></p>
+          </div>
+          <p>
+            Education Is Not The Learning Of Facts, But The Training Of The Mind
+            To Think.
+          </p>
+        </div>
+        <div class="dja portfolioBtechAndDiplomaEducation">
+          <img class="portfolioCollegeImage" src="./mdu.jpeg" />
+          <div class="dja portfolioCollegeInfo">
+            <h1>Master of Computer Applications (MCA)</h1>
+            <p>MAHARSHI DAYANAND UNIVERSITY Rohtak-124001, Haryana (INDIA)</p>
+            <h3>2021-2023 | Completed</h3>
+          </div>
+        </div>
+        <div class="dja portfolioBtechAndDiplomaEducation">
+          <img class="portfolioCollegeImage" src="./gpm.jpeg" />
+          <div class="dja portfolioCollegeInfo">
+            <h1>Bachelor of Computer Applications (BCA)</h1>
+            <p>
+              MAHARSHI DAYANAND UNIVERSITY Rohtak-124001, Haryana (INDIA)
+            </p>
+            <h3>2018-2021 | Completed</h3>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- ====================================================================================== -->
+    <section id="Skills" class="portfolioSkills">
+      <article class="dja portfolioSkillsBlock">
+        <div class="dja portfolioSkillsCircularArea">
+          <div
+            class="dja portfolioSkillsCircularMeter"
+            portfolioSkillsCircularAreaColor="orange"
+          >
+            <span class="portfolioSkillsCircularMeterPercent">85</span>
+          </div>
+          <ul class="html">
+            <i class="fa-brands fa-html5"></i>
+            <li>Doctype</li>
+            <li>Tag</li>
+            <li>Elements</li>
+            <li>Attributes</li>
+            <li>Hyperlink</li>
+            <li>List</li>
+            <li>Table</li>
+            <li>Form</li>
+            <li>Div-Span</li>
+            <li>Class-Id</li>
+          </ul>
+        </div>
+        <div class="dja portfolioSkillsCircularArea">
+          <div
+            class="dja portfolioSkillsCircularMeter"
+            portfolioSkillsCircularAreaColor="blue"
+          >
+            <span class="portfolioSkillsCircularMeterPercent">70</span>
+          </div>
+          <ul class="css">
+            <i class="fa-brands fa-css3-alt"></i>
+            <li>CSS Box Model</li>
+            <li>Background</li>
+            <li>Display</li>
+            <li>Position</li>
+            <li>Selectors</li>
+            <li>Flexbox</li>
+            <li>Transforms</li>
+            <li>Transitions</li>
+            <li>Animations</li>
+          </ul>
+        </div>
+        <div class="dja portfolioSkillsCircularArea">
+          <div
+          class="dja portfolioSkillsCircularMeter"
+            portfolioSkillsCircularAreaColor="rgb(229, 229, 14)"
+          >
+            <span class="portfolioSkillsCircularMeterPercent">65</span>
+          </div>
+          <ul class="javascript">
+            <i class="fa-brands fa-square-js"></i>
+            <li>Scope</li>
+            <li>Token</li>
+            <li>Function</li>
+            <li>Lexical Scope</li>
+            <li>Closure</li>
+            <li>Array</li>
+            <li>Object</li>
+            <li>Call Apply Bind</li>
+            <li>Constructor</li>
+            <li>This keyword</li>
+            <li>Destructuring</li>
+            <li>Rest and Spread</li>
+          </ul>
+        </div>
+        <div class="dja portfolioSkillsCircularArea">
+          <div
+            class="dja portfolioSkillsCircularMeter"
+            portfolioSkillsCircularAreaColor="rgb(0, 183, 255)"
+          >
+            <span class="portfolioSkillsCircularMeterPercent">85</span>
+          </div>
+          <ul class="java">
+          <i class="fa-brands fa-java"></i>
+            <li>Data Types</li>
+            <li>Loop</li>
+            <li>Methods</li>
+            <li>Class</li>
+            <li>This keyword</li>
+            <li>Constructor</li>
+            <li>Array</li>
+            <li>String</li>
+            <li>Inheritance</li>
+            <li>Encapsulation</li>
+            <li>File handling</li>
+            <li>Collection</li>
+          </ul>
+        </div>
+        <div class="dja portfolioSkillsCircularArea">
+          <div
+            class="dja portfolioSkillsCircularMeter"
+            portfolioSkillsCircularAreaColor="black"
+          >
+            <span class="portfolioSkillsCircularMeterPercent">80</span>
+          </div>
+          <ul class="sql">
+            <i class="fa-solid fa-database"></i>
+            <li>DDL</li>
+            <li>DCL</li>
+            <li>DML</li>
+            <li>DQL</li>
+            <li>TCL</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <!-- ====================================================================================== -->
+    <section id="Projects" class="dja portfolioProjectSection">
+      <!-- ==========================ARTICLE-1========================== -->
+      <article
+        class="portfolioAllProjectsArticle"
+        id="portfolioAllProjectsArticle"
+      >
+        <a
+          href="#Projects"
+          class="closePortfolioAllProjectsArticleButton"
+          onclick="closePortfolioAllProjectsArticle()"
+        >
+          &times;
+        </a>
+        <!-- ================= -->
+        <div id="weatherAppSection" class="weatherAppSection">
+          <div id="weatherArticle1" class="dja padding weatherArticle1">
+            <form id="weatherForm" class="dja weatherForm">
+              <input
+                id="weatherFormInput"
+                class="padding weatherFormInput"
+                type="text"
+                required
+                placeholder="Zone / Area / City / Capital / Country"
+              />
+              <button class="weatherFormInputBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <div id="weatherArticle2" class="padding weatherArticle2">
+            <button
+              onclick="resetWeatherData()"
+              class="dja padding resetWeatherDataBtn"
+            >
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+            <h1 id="weatherDegree" class="weatherDegree"></h1>
+            <h4 id="weatherType" class="weatherType"></h4>
+            <img id="weatherImages" class="weatherImages" />
+            <h1 id="weatherPlace" class="weatherPlace"></h1>
+            <div class="dja padding weatherDetail">
+              <div class="dja padding weatherDetailLeft">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="dja weatherMetaDetailLeft">
+                  <h1 id="dropletSideDetails" class="dropletSideDetails"></h1>
+                  <h1 class="dropletSideDetails">Humidity</h1>
+                </div>
+              </div>
+              <div class="dja padding weatherDetailRight">
+                <i class="fa-solid fa-wind"></i>
+                <div class="dja weatherMetaDetailRight">
+                  <h1 id="windSideDetails" class="windSideDetails"></h1>
+                  <h1 class="windSideDetails">Wind-Speed</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================= -->
+        <div id="githubAppSection" class="githubAppSection">
+          <form id="githubAppDetailForm" class="dja githubAppDetailForm">
+            <input
+              class="githubAppDetailFormInput"
+              id="githubAppDetailFormInput"
+              type="text"
+              placeholder="Enter the user-ID"
+              required
+            />
+            <button class="githubProfileSearchButton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div class="githubArticles githubProfileImages">
+            <button onclick="resetGithubData()" class="dja resetGithubData">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+            <div id="githubProfileBcimage" class="githubProfileBcimage"></div>
+            <div
+              id="githubProfileFrontimage"
+              class="githubProfileFrontimage"
+            ></div>
+          </div>
+          <div class="githubArticles githubUserProfileInfo">
+            <h2
+              class="githubUserProfileInfoName"
+              id="githubUserProfileInfoName"
+            ></h2>
+            <h5
+              class="githubUserProfileInfoUserid"
+              id="githubUserProfileInfoUserid"
+            ></h5>
+            <p
+              class="githubUserProfileInfoBio"
+              id="githubUserProfileInfoBio"
+            ></p>
+          </div>
+          <div class="githubArticles githubUserProfileConnections">
+            <div class="dja githubUserFollowers githubUserFollow">
+              <h5 id="githubUserFollowers"></h5>
+              <p>Followers</p>
+            </div>
+            <div class="dja githubUserFollowing githubUserFollow">
+              <h5 id="githubUserFollowing"></h5>
+              <p>Following</p>
+            </div>
+          </div>
+          <div class="githubArticles githubUserViewbtns">
+            <button class="githubUserFollowBtn">Follow</button>
+            <button class="githubUserViewProfileBtn">
+              <a
+                class="githubUserViewProfileLink"
+                target="_blank"
+                id="githubUserViewProfileLink"
+                >View Profile</a
+              >
+            </button>
+          </div>
+          <div class="githubArticles githubUserSkills">
+            <h3 class="githubUserSkillsHeading">Skills</h3>
+            <div class="dja githubUserSkillsType">
+              <div class="dja githubUserSkillsDummyBtn">html</div>
+              <div class="dja githubUserSkillsDummyBtn">css</div>
+              <div class="dja githubUserSkillsDummyBtn">javascript</div>
+              <div class="dja githubUserSkillsDummyBtn">java</div>
+              <div class="dja githubUserSkillsDummyBtn">j2ee</div>
+              <div class="dja githubUserSkillsDummyBtn">sql</div>
+              <div class="dja githubUserSkillsDummyBtn">html</div>
+              <div class="dja githubUserSkillsDummyBtn">css</div>
+              <div class="dja githubUserSkillsDummyBtn">javascript</div>
+            </div>
+          </div>
+        </div>
+        <!-- ================= -->
+        <div
+          id="qrCodeGeneratorAppSection"
+          class="dja qrCodeGeneratorAppSection"
+        >
+          <form id="qrCodeGeneratorForm" class="dja qrCodeGeneratorForm">
+            <input
+              id="qrCodeGeneratorFormInput"
+              class="padding qrCodeGeneratorFormInput"
+              type="text"
+              required
+              placeholder="Enter Anything"
+            />
+            <button class="dja qrCodeGeneratorFormInputBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div id="qrCodeImageArea" class="padding qrCodeImageArea">
+            <img id="qrCodeImage" class="qrCodeImage" />
+          </div>
+          <div id="qrCodeDownloadAndResetBtn" class="qrCodeDownloadAndResetBtn">
+            <a id="qrCodeDownloadBtn" class="qrCodeDownloadBtn dja" download>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <button onclick="resetQrCodeData()" class="qrCodeResetBtn dja">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- ================= -->
+      </article>
+      <!-- ==========================ARTICLE-1========================== -->
+      <!-- ==========================ARTICLE-2========================== -->
+      <article class="dja portfolioChangeProjectArticle">
+        <!-- ================= -->
+        <div class="portfolioProjectArea">
+          <div class="portfolioProjectViewArea">
+            <button
+              class="dja openPortfolioAllProjectsArticleButton"
+              onclick="openPortfolioAllProjectsArticle(0)"
+            >
+              View
+            </button>
+          </div>
+          <div class="dja portfolioProjectAreaInfo">
+            <h1 class="dja portfolioProjectAreaInfoDetail">Weather App</h1>
+
+            <div class="dja straightLineProgressBar">
+              <div class="straightLineProgressTechBar">
+                <p>HTML</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(255, 56, 56)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">80%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="straightLineProgressTechBar">
+                <p>CSS</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(0, 183, 255)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">60%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="straightLineProgressTechBar">
+                <p>Javascript</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(207, 207, 8)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">40%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dja portfolioProjectAreaLogo">
+            <img class="portfolioProjectAreaEarthLogo" src="./earthLogo.jpg" />
+          </div>
+        </div>
+        <!-- ================= -->
+        <div class="portfolioProjectArea">
+          <div class="portfolioProjectViewArea">
+            <button
+              class="dja openPortfolioAllProjectsArticleButton"
+              onclick="openPortfolioAllProjectsArticle(1)"
+            >
+              View
+            </button>
+          </div>
+          <div class="dja portfolioProjectAreaInfo">
+            <h1 class="dja portfolioProjectAreaInfoDetail">GitHub</h1>
+
+            <div class="dja straightLineProgressBar">
+              <div class="straightLineProgressTechBar">
+                <p>HTML</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(255, 56, 56)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">90%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="straightLineProgressTechBar">
+                <p>CSS</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(0, 183, 255)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">50%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="straightLineProgressTechBar">
+                <p>Javascript</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(207, 207, 8)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">85%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dja portfolioProjectAreaLogo">
+            <!-- <img src="./github4.png" /> -->
+            <img src="./github12.jpg" />
+          </div>
+        </div>
+        <!-- ================= -->
+        <div class="portfolioProjectArea">
+          <div class="portfolioProjectViewArea">
+            <button
+              class="dja openPortfolioAllProjectsArticleButton"
+              onclick="openPortfolioAllProjectsArticle(2)"
+            >
+              View
+            </button>
+          </div>
+          <div class="dja portfolioProjectAreaInfo">
+            <h1 class="dja portfolioProjectAreaInfoDetail">
+              Qr-Code Generator
+            </h1>
+
+            <div class="dja straightLineProgressBar">
+              <div class="straightLineProgressTechBar">
+                <p>HTML</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(255, 56, 56)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">50%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="straightLineProgressTechBar">
+                <p>CSS</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(0, 183, 255)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">70%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="straightLineProgressTechBar">
+                <p>Javascript</p>
+                <div class="techBar">
+                  <div
+                    style="background-color: rgb(207, 207, 8)"
+                    class="techCoveredBar"
+                  >
+                    <p class="techCoveredBarPercent">90%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dja portfolioProjectAreaLogo">
+            <img src="./qrcode20.jpg" />
+          </div>
+        </div>
+        <!-- ================= -->
+        <a
+          class="dja previousPortfolioProject portfolioRightLeftProjectBtn"
+          onclick="portfolioScroller(-1)"
+          >❮</a
+        >
+        <a
+          class="dja nextPortfolioProject portfolioRightLeftProjectBtn"
+          onclick="portfolioScroller(1)"
+          >❯</a
+        >
+      </article>
+      <!-- ==========================ARTICLE-2========================== -->
+    </section>
+    <!-- ====================================================================================== -->
+    <section id="Contact" class="dja portfolioContactSection">
+      <article class="dja">
+        <div class="dja portfolioReachOutOrStalkAndMessageMe">
+          <p>Get in Touch</p>
+          <h1>Reach out or just stalk.</h1>
+        </div>
+        <div class="dja portfolioSocialContactsLinks">
+          <div class="dja portfolioSocialContactsLinksMail">
+            <i class="fa-solid fa-envelope"></i>
+            <a target="_blank" href="mailto:itskartik52@gmail.com"
+              >itskartik52@gmail.com</a
+            >
+          </div>
+          <address class="dja portfolioSocialContactsLinksMailAddress">
+            <i class="fa-solid fa-location-dot"></i>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Faridabad,+Haryana/@28.4020423,77.1542585,11z/data=!3m1!4b1!4m6!3m5!1s0x390cdc15f5a424b1:0xe4f50576c850e0f2!8m2!3d28.4089123!4d77.3177894!16zL20vMDRmMTB0?entry=ttu"
+              >Faridabad - 121004, Haryana</a
+            >
+          </address>
+          <div class="dja portfolioSocialContactsLinksPhoneNumber">
+            <i class="fa-solid fa-phone"></i>
+            <a href="mailto:itskartik52@gmail.com">9899982240</a>
+          </div>
+        </div>
+        <div class="dja portfolioSocialMediaLinksIcons">
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://github.com/Gaur52kartik" target="_blank" style="color: black;">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kartik-gaur-0b421422a" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="portfolioContactSectionCopyRight">
+          <p>Copyright © 2023 Kartik Gaur. All Rights Reserved</p>
+        </div>
+      </article>
+    </section>
+    <!-- ====================================================================================== -->
+    <script
+      src="https://kit.fontawesome.com/00472cec1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./navbar.js"></script>
+    <script src="./home.js"></script>
+    <script src="./about.js"></script>
+    <script src="./education.js"></script>
+    <script src="./skills.js"></script>
+    <script src="./contact.js"></script>
+    <script src="./project.js"></script>
+  </body>
+</html>
